@@ -29,5 +29,15 @@ fn main() -> Result<(), Box<dyn Error>> {
 main();
 
 
-
+/*
+Train Data:
+StringRecord(["147", "6.3", "2.5", "5.0", "1.9", "Iris-virginica"])
+StringRecord(["131", "7.4", "2.8", "6.1", "1.9", "Iris-virginica"])
+StringRecord(["139", "6.0", "3.0", "4.8", "1.8", "Iris-virginica"])
+StringRecord(["39", "4.4", "3.0", "1.3", "0.2", "Iris-setosa"])
+StringRecord(["111", "6.5", "3.2", "5.1", "2.0", "Iris-virginica"])
+StringRecord(["106", "7.6", "3.0", "6.6", "2.1", "Iris-virginica"])
+StringRecord(["8", "5.0", "3.4", "1.5", "0.2", "Iris-setosa"])
+StringRecord(["97", "5.7", "2.9", "4.2", "1.3", "Iris-versicolor"])
+*/
 
