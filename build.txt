@@ -5,3 +5,11 @@ cargo install evcxr_jupyter
 evcxr_jupyter --install
 
 jupyter notebook
+
+
+//////////
+
+cargo build
+
+cargo run
+
