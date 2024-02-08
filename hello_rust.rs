@@ -4,4 +4,4 @@ fn my_function() {
 
 my_function();
 
-
+//Hello Rust!
