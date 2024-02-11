@@ -9,6 +9,8 @@ jupyter notebook
 
 //////////
 
+cargo init
+
 cargo build
 
 cargo run
