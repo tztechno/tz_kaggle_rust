@@ -7,9 +7,15 @@ mod str2;
 mod utils;
 
 
+
+use petgraph::{
+    stable_graph::NodeIndex,
+    Direction::{Incoming, Outgoing},
+};
+
+use polars::prelude::*;
+use pyo3_polars::derive::polars_expr;
 use pyo3::{pymodule, types::PyModule, PyResult, Python};
-
-
 
 
 [dependencies]
