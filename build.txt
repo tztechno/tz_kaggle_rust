@@ -1,17 +1,43 @@
+####################################################
+####################################################
+####################################################
+####################################################
+####################################################
+####################################################
+####################################################
+####################################################
+####################################################
+
+!curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain nightly
+os.environ['PATH'] = os.environ['PATH'] + ':' + f"{os.environ['HOME']}/.cargo/bin/"
+
+####################################################
+### for kaggle notebook ###
+
+!mkdir ./src/
+!curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rustup.sh
+!bash ./rustup.sh -y
+
+####################################################
+
+!curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+!source /root/.cargo/env
+!/root/.cargo/bin/cargo new heuristic_transformer
+%cd heuristic_transformer
+! mkdir ./tools ./tools/in ./tools/out
+
+####################################################
+### for jupyter notebook ###
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
 cargo install evcxr_jupyter
-
 evcxr_jupyter --install
-
 jupyter notebook
 
-
-//////////
+####################################################
 
 cargo init
-
 cargo build
-
 cargo run
 
+####################################################
