@@ -6,6 +6,10 @@
 ####################################################
 ####################################################
 ####################################################
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+### need manual operation, select 1
+
 ####################################################
 
 !curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain nightly
