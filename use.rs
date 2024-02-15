@@ -17,6 +17,18 @@ use polars::prelude::*;
 use pyo3_polars::derive::polars_expr;
 use pyo3::{pymodule, types::PyModule, PyResult, Python};
 
+use smartcore::linalg::naive::dense_matrix::DenseMatrix;
+use smartcore::linalg::BaseMatrix;
+use smartcore::ensemble::random_forest_regressor::RandomForestRegressor;
+use smartcore::model_selection::train_test_split;
+use smartcore::metrics::accuracy;
+use std::convert::TryFrom;
+use std::fs::File;
+use std::path::Path;           
+use polars::prelude::*;
+use polars::frame::DataFrame;
+use polars::prelude::Result as PolarResult;
+use polars::prelude::SerReader;
 
 [dependencies]
 pyo3 = {version = "*", features = ["extension-module"]}
