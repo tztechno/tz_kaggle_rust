@@ -11,7 +11,9 @@
 
 
 
-
+thread 'main' panicked at main.rs:76:55:
+called `Result::unwrap()` on an `Err` value: NotFound("hight")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 thread 'main' panicked at /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/smartcore-0.2.1/src/model_selection/mod.rs:156:9:
 number of sample is too small 0
