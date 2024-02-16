@@ -5,7 +5,11 @@
 
 
 
-
+error[E0308]: mismatched types
+ --> main.rs:4:21
+  |
+4 | const s: [i32; 5] = Series::new("a", &[1, 2, 3, 4, 5]);
+  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `[i32; 5]`, found `Series`
 
 error: missing type for `const` item
  --> main.rs:4:8
