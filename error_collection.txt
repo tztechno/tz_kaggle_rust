@@ -9,7 +9,11 @@
 
 
 
-
+error[E0425]: cannot find value `WHITE` in this scope  
+   --> main.rs:112:16
+    |
+112 |     root.fill(&WHITE)?;
+    |                ^^^^^ not found in this scope
 
 thread 'main' panicked at main.rs:76:55:
 called `Result::unwrap()` on an `Err` value: NotFound("hight")
