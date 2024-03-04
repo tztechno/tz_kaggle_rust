@@ -52,11 +52,16 @@ use smartcore::model_selection::train_test_split;
 use smartcore::metrics::accuracy;
 use std::convert::TryFrom;
 use std::fs::File;
-use std::path::Path;           
+use std::path::Path; 
+
 use polars::prelude::*;
 use polars::frame::DataFrame;
 use polars::prelude::Result as PolarResult;
-use polars::prelude::SerReader;
+use polars::prelude::SerReader;        
+use polars::prelude::*;
+use polars::frame::DataFrame;
+use polars::prelude::Result as PolarResult;
+use polars::prelude::SerReader; 
 
 use smartcore::linalg::naive::dense_matrix::DenseMatrix;
 use smartcore::linalg::BaseMatrix;
@@ -67,9 +72,15 @@ use smartcore::metrics::accuracy;
 use std::error::Error;
 use std::fs::File;
 use csv::ReaderBuilder;
+
 use plotters::prelude::*;
+use plotters::evcxr::SVGWrapper;
+use plotters::prelude::RED; 
+use plotters::prelude::BLUE;
+use plotters::prelude::GREEN;
+use plotters::prelude::Circle;                
+use plotters::prelude::Rectangle;
+use plotters::prelude::ChartBuilder;
+use plotters::prelude::evcxr_figure;                
                 
-use polars::prelude::*;
-use polars::frame::DataFrame;
-use polars::prelude::Result as PolarResult;
-use polars::prelude::SerReader;                
+               
